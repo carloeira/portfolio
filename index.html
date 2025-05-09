@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Incrível</title>
+
+    <!-- Fontes e Normalize -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="social-icons">
+        <a href="https://github.com/carloeira" target="_blank" title="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/carloeira" target="_blank" title="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        </a>
+    </div>
+
+    <canvas class="rain"></canvas>
+
+    <section class="intro">
+        <h1>Bem-vindo ao meu portfólio</h1>
+    </section>
+
+    <section class="about">
+        <h2>Olá! Meu nome é Carlos Vieira</h2>
+        <p>Sou desenvolvedor fullstack e professor do Geração Tech</p>
+        <p>Estou sempre em busca de novos desafios e aprendizados.</p>
+        <p>Atualmente, estou focado em aprimorar minhas habilidades em JavaScript e React.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Minhas Skills</h2>
+        <div id="logo-globe"></div>
+    </section>
+
+    <section class="projects">
+        <h2>Meus Projetos</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Projeto 1</h3>
+                <p>Descrição do projeto 1.</p>
+            </div>
+            <div class="project-item">
+                <h3>Projeto 2</h3>
+                <p>Descrição do projeto 2.</p>
+            </div>
+            <div class="project-item">
+                <h3>Projeto 3</h3>
+                <p>Descrição do projeto 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Entre em Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <div id="notificacao" class="notificacao" style="display: none;"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="js/rain.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/globe.js" defer></script>
+</body>
+</html>
